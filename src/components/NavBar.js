@@ -8,11 +8,11 @@ function NavBar() {
         <NavLink exact to="/">
           Home
         </NavLink>
-        <NavLink exact to="/section2">
-          Section 1
+        <NavLink exact to="/pets-list">
+        Pets List
         </NavLink>
         <NavLink exact to="/section3">
-          Section 2
+          section
         </NavLink>
       </nav>
   );
