@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
       <div id="logo">
-        <img
+        <img 
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6tvRJK--ykXSOmKaFCy9OtyzIQfE7tiWIw&usqp=CAU"
           alt="puppy"
           id="logoImg"
