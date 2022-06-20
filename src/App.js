@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import Header from './components/Header'
 
 function App() {
   const [puppies, setPuppies] = useState([]);
@@ -29,14 +29,7 @@ function App() {
 
   return (
     <div>
-      {/* <header>
-          <nav>
-            <NavLink to='here'>Home</NavLink>
-            <NavLink to='here'>Home</NavLink>
-            <NavLink to='here'>Home</NavLink>
-          </nav>
-        </header> */}
-   
+      <Header />
       {isLoaded? puppiesItems: CircularUnderLoad()}
     </div>
   );
