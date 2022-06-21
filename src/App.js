@@ -1,36 +1,36 @@
 import React, { useEffect, useState } from "react";
-import CircularProgress from "@material-ui/core/CircularProgress";
-import Header from './components/Header'
+import Header from "./components/Header";
+import "./styles/maincontent.css";
+import PetsList from "./components/PetsList";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   const [puppies, setPuppies] = useState([]);
-  const [isLoaded, setIsLoaded] = useState(false)
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:3001/pets")
       .then((r) => r.json())
       .then((puppies) => {
-        setIsLoaded(true)
-        setPuppies(puppies)});
+        setIsLoaded(true);
+        setPuppies(puppies);
+      });
   }, []);
-
-  function CircularUnderLoad() {
-    return <CircularProgress disableShrink />;
-  }
-
-  const puppiesItems = puppies.map((puppy) => {
-    return (
-      <div key={puppy.id}>
-        <h2>{puppy.name}</h2>
-        <img src={puppy.image} alt={puppy.breed} />
-      </div>
-    );
-  });
 
   return (
     <div>
       <Header />
-      {isLoaded? puppiesItems: CircularUnderLoad()}
+      <Switch>
+        <Route path="/add-pet">
+          <h1>Form to add / edit</h1>
+        </Route>
+        <Route exact path="/">
+          <PetsList puppies={puppies} isLoaded={isLoaded} />
+        </Route>
+        <Route path="*">
+          <h1>404 Page Not Found!</h1>
+        </Route>
+      </Switch>
     </div>
   );
 }

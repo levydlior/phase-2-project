@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +6,7 @@ body {
 header {
   border-bottom: 2px solid black;
   display: flex;
+  height: 5rem;
 }
 
 #logo {
@@ -27,6 +24,7 @@ header {
 a {
   margin: 1rem;
   padding: 0.5rem;
+  text-decoration: none;
 }
 
 nav > a.active {
@@ -34,7 +32,7 @@ nav > a.active {
 }
 
 #logoImg {
-  margin: 1rem;
+  width: 200px;
 }
 
 h1 {
