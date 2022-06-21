@@ -19,18 +19,18 @@ function App() {
 
   return (
     <div>
-    <Header />
-    <Switch>
-      <Route path="/pets-list">
-        <PetsList puppies={puppies} isLoaded={isLoaded} />
-      </Route>
-      <Route exact path="/">
-       <h1>main Page</h1> 
-      </Route>
-      <Route path='*'>
-        <h1>404 Page Not Found!</h1>
-      </Route>
-    </Switch>
+      <Header />
+      <Switch>
+        <Route path="/add-pet">
+          <h1>Form to add / edit</h1>
+        </Route>
+        <Route exact path="/">
+          <PetsList puppies={puppies} isLoaded={isLoaded} />
+        </Route>
+        <Route path="*">
+          <h1>404 Page Not Found!</h1>
+        </Route>
+      </Switch>
     </div>
   );
 }
