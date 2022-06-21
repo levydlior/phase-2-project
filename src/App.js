@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import "./styles/maincontent.css";
 import PetsList from "./components/PetsList";
 import { Route, Switch } from "react-router-dom";
+import PetDetails from "./components/PetDetails";
 
 function App() {
   const [puppies, setPuppies] = useState([]);
@@ -21,6 +22,9 @@ function App() {
     <div>
       <Header />
       <Switch>
+        <Route exact path="/pets-list/:id">
+          <PetDetails />
+        </Route>
         <Route path="/add-pet">
           <h1>Form to add / edit</h1>
         </Route>
