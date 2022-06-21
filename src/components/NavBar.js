@@ -11,8 +11,8 @@ function NavBar() {
         <NavLink exact to="/pets-list">
         Pets List
         </NavLink>
-        <NavLink exact to="/section3">
-          section
+        <NavLink exact to="/adoption-form">
+          Apply for Adoption
         </NavLink>
       </nav>
   );

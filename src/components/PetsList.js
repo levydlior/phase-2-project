@@ -5,17 +5,20 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 
 function PetsList({ puppies, isLoaded }) {
 
-
   const puppiesItems = puppies.map((puppy) => <PetCard key={puppy.id} puppy={puppy}/>);
   return(
-   <main> 
       <div className="content">{puppiesItems}</div> 
-   </main>
- 
   )
-    
 };
 
 
+  return (
+    <main>
+      <div className="content">
+        {isLoaded ? puppiesItems() : CircularUnderLoad()}
+      </div>
+    </main>
+  );
+}
 
 export default PetsList;
