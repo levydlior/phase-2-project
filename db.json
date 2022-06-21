@@ -1,6 +1,5 @@
 {
   "pets": [
-    
     {
       "id": 1,
       "name": "Lucky",
@@ -89,7 +88,7 @@
       "type": "dog",
       "image": "https://media.istockphoto.com/photos/black-labrador-retriever-on-the-grass-picture-id1163331995?k=20&m=1163331995&s=612x612&w=0&h=8g8jgRqG81Oep6DRyiinm6BAtH589NWv2Vtz1s1w9OI="
     },
-        {
+    {
       "id": 12,
       "name": "Zed",
       "breed": "Persian",
@@ -97,7 +96,7 @@
       "type": "cat",
       "image": "https://cattime.com/assets/uploads/gallery/persian-cats-and-kittens/persian-cat-breed-pictures-1.jpg"
     },
-        {
+    {
       "id": 13,
       "name": "Jasper",
       "breed": "Ragdoll",
@@ -105,7 +104,7 @@
       "type": "cat",
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Ragdoll_from_Gatil_Ragbelas.jpg"
     },
-        {
+    {
       "id": 14,
       "name": "Henry",
       "breed": "Maine Coon",
@@ -113,7 +112,7 @@
       "type": "cat",
       "image": "https://cattime.com/assets/uploads/gallery/maine-coon-cats-and-kittens/maine-coon-cats-and-kittens-5.jpg"
     },
-        {
+    {
       "id": 15,
       "name": "Bella",
       "breed": "Manx",
@@ -121,7 +120,7 @@
       "type": "cat",
       "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Manx_cat_by_Karen_Weaver.jpg"
     },
-        {
+    {
       "id": 16,
       "name": "Chloe",
       "breed": "Manx",
@@ -129,7 +128,7 @@
       "type": "cat",
       "image": "https://www.thesprucepets.com/thmb/iYXXqIExq1pZewhcR7622eJgE-4=/941x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-87584783-438490f69bac4ac7b90a75a70e76eef6.jpg"
     },
-        {
+    {
       "id": 17,
       "name": "Carl",
       "breed": "Shorthair",
@@ -137,7 +136,7 @@
       "type": "cat",
       "image": "https://www.freeportvet.com/sites/default/files/styles/large/public/american-shorthair-cat-breed-info_0.jpg?itok=MCtZxXLq"
     },
-        {
+    {
       "id": 18,
       "name": "Tiger",
       "breed": "Shorthair",
@@ -145,7 +144,7 @@
       "type": "cat",
       "image": "https://kittyinsight.com/wp-content/uploads/2022/03/orangetabbyamericanshorthaircat.jpg"
     },
-        {
+    {
       "id": 19,
       "name": "Leo",
       "breed": "Wirehair",
@@ -153,13 +152,45 @@
       "type": "cat",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/American_Wirehair_-_CFF_cat_show_Heinola_2008-05-04_IMG_8721.JPG/220px-American_Wirehair_-_CFF_cat_show_Heinola_2008-05-04_IMG_8721.JPG"
     },
-        {
+    {
       "id": 20,
       "name": "Maggie",
       "breed": "Wirehair",
       "sex": "female",
       "type": "cat",
       "image": "https://cattime.com/assets/uploads/gallery/american-wirehair-cats-and-kittens/american-wirehair-cats-kittens-1.jpg"
+    },
+    {
+      "name": "Jerry",
+      "breed": "German Shepherd",
+      "sex": "male",
+      "type": "dog",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH4AfgMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAYCAwUBB//EAEIQAAIBAwIDAwkGAgcJAAAAAAECAwAEEQUhBhIxE0FRBxQVImFxgZGxMlRywdHwkqEjMzRCUoPhFiQ1Q3OCk7LC/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAMEBQIBBgf/xAA3EQACAQICBgkDBAEFAQAAAAAAAQIDEQQhBRIxQYHBEyIyUWFxobHRFOHwM0JSkUMVIzTC8Qb/2gAMAwEAAhEDEQA/APuNAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUB5kUAyKA9oBQCgFAKAUAoBQCgFAM0B4CDQHtAKApvH+pXuntZ+ZXUkHOH5uXv3WszSFapTlFQdtvI1dG0KdWMtdXtbmVmw4n1tSWOouw5sESIrAeB6VTWMrxV9a/mXngcPJ2cbHetONruMhb21hk8WjJT443qWGlJfviQz0RF505HSTjGJ/sWbk/9RasrSVN7mVXouot5n/tWe7TJj7pU/Wu/ro7l7HH+ny/l7mDcXOD/AMIuT7pE/WvPr1/F+nyPoH/Jepj/ALYt3aNdn/MT9afXx/i/T5H+nv8AkvUxfjORRn0Jef8Akj/WuljYvc/QfQP+a9fglniWYyMI9IupEAyHVlw3u3o8ZbZBv+it0NtrNZ4rcNyei5u0xnl7VP1rn69Xzi/T5DoO10zZc8STwcp9D3LoWCl1kTAPzr361Wu4v0PVQvvMbTiOW9vDb",
+      "id": 21
+    },
+    {
+      "name": "Jerry",
+      "breed": "German Shepherd",
+      "sex": "male",
+      "type": "dog",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH4AfgMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAYCAwUBB//EAEIQAAIBAwIDAwkGAgcJAAAAAAECAwAEEQUhBhIxE0FRBxQVImFxgZGxMlRywdHwkqEjMzRCUoPhFiQ1Q3OCk7LC/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAMEBQIBBgf/xAA3EQACAQICBgkDBAEFAQAAAAAAAQIDEQQhBRIxQYHBEyIyUWFxobHRFOHwM0JSkUMVIzTC8Qb/2gAMAwEAAhEDEQA/APuNAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUB5kUAyKA9oBQCgFAKAUAoBQCgFAM0B4CDQHtAKApvH+pXuntZ+ZXUkHOH5uXv3WszSFapTlFQdtvI1dG0KdWMtdXtbmVmw4n1tSWOouw5sESIrAeB6VTWMrxV9a/mXngcPJ2cbHetONruMhb21hk8WjJT443qWGlJfviQz0RF505HSTjGJ/sWbk/9RasrSVN7mVXouot5n/tWe7TJj7pU/Wu/ro7l7HH+ny/l7mDcXOD/AMIuT7pE/WvPr1/F+nyPoH/Jepj/ALYt3aNdn/MT9afXx/i/T5H+nv8AkvUxfjORRn0Jef8Akj/WuljYvc/QfQP+a9fglniWYyMI9IupEAyHVlw3u3o8ZbZBv+it0NtrNZ4rcNyei5u0xnl7VP1rn69Xzi/T5DoO10zZc8STwcp9D3LoWCl1kTAPzr361Wu4v0PVQvvMbTiOW9vDb",
+      "id": 22
+    },
+    {
+      "name": "Jerry",
+      "breed": "German Shepherd",
+      "sex": "male",
+      "type": "dog",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH4AfgMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAYCAwUBB//EAEIQAAIBAwIDAwkGAgcJAAAAAAECAwAEEQUhBhIxE0FRBxQVImFxgZGxMlRywdHwkqEjMzRCUoPhFiQ1Q3OCk7LC/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAMEBQIBBgf/xAA3EQACAQICBgkDBAEFAQAAAAAAAQIDEQQhBRIxQYHBEyIyUWFxobHRFOHwM0JSkUMVIzTC8Qb/2gAMAwEAAhEDEQA/APuNAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUB5kUAyKA9oBQCgFAKAUAoBQCgFAM0B4CDQHtAKApvH+pXuntZ+ZXUkHOH5uXv3WszSFapTlFQdtvI1dG0KdWMtdXtbmVmw4n1tSWOouw5sESIrAeB6VTWMrxV9a/mXngcPJ2cbHetONruMhb21hk8WjJT443qWGlJfviQz0RF505HSTjGJ/sWbk/9RasrSVN7mVXouot5n/tWe7TJj7pU/Wu/ro7l7HH+ny/l7mDcXOD/AMIuT7pE/WvPr1/F+nyPoH/Jepj/ALYt3aNdn/MT9afXx/i/T5H+nv8AkvUxfjORRn0Jef8Akj/WuljYvc/QfQP+a9fglniWYyMI9IupEAyHVlw3u3o8ZbZBv+it0NtrNZ4rcNyei5u0xnl7VP1rn69Xzi/T5DoO10zZc8STwcp9D3LoWCl1kTAPzr361Wu4v0PVQvvMbTiOW9vDb",
+      "id": 23
+    },
+    {
+      "name": "Jerry",
+      "breed": "German Shepherd",
+      "sex": "male",
+      "type": "dog",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH4AfgMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAYCAwUBB//EAEIQAAIBAwIDAwkGAgcJAAAAAAECAwAEEQUhBhIxE0FRBxQVImFxgZGxMlRywdHwkqEjMzRCUoPhFiQ1Q3OCk7LC/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAMEBQIBBgf/xAA3EQACAQICBgkDBAEFAQAAAAAAAQIDEQQhBRIxQYHBEyIyUWFxobHRFOHwM0JSkUMVIzTC8Qb/2gAMAwEAAhEDEQA/APuNAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUB5kUAyKA9oBQCgFAKAUAoBQCgFAM0B4CDQHtAKApvH+pXuntZ+ZXUkHOH5uXv3WszSFapTlFQdtvI1dG0KdWMtdXtbmVmw4n1tSWOouw5sESIrAeB6VTWMrxV9a/mXngcPJ2cbHetONruMhb21hk8WjJT443qWGlJfviQz0RF505HSTjGJ/sWbk/9RasrSVN7mVXouot5n/tWe7TJj7pU/Wu/ro7l7HH+ny/l7mDcXOD/AMIuT7pE/WvPr1/F+nyPoH/Jepj/ALYt3aNdn/MT9afXx/i/T5H+nv8AkvUxfjORRn0Jef8Akj/WuljYvc/QfQP+a9fglniWYyMI9IupEAyHVlw3u3o8ZbZBv+it0NtrNZ4rcNyei5u0xnl7VP1rn69Xzi/T5DoO10zZc8STwcp9D3LoWCl1kTAPzr361Wu4v0PVQvvMbTiOW9vDb",
+      "id": 24
     }
   ]
 }
