@@ -22,11 +22,11 @@ function PetsList({ puppies, isLoaded }) {
   });
 
   return (
-    <div>
-      <main>
-        <div id="content">{isLoaded ? puppiesItems : CircularUnderLoad()}</div>
-      </main>
-    </div>
+    <main>
+      <div className="content">
+        {isLoaded ? puppiesItems : CircularUnderLoad()}
+      </div>
+    </main>
   );
 }
 
