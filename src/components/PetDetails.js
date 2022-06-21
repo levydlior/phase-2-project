@@ -24,24 +24,31 @@ function PetDetails() {
   const details = () => {
     return (
       <div id="pet-details">
-        <img src={pet.image} alt={pet.breed} />
-        <h2>{pet.name}</h2>
+        <img id='pet-details-img'src={pet.image} alt={pet.breed} />
+        <section id="button-text">
+        <section>
+        <h2>Name: {pet.name}</h2>
         <p>
           <b>Breed: </b> {pet.breed}
         </p>
         <p>
           <b>Sex: </b> {pet.breed === "male" ? "male ♂" : "female ♀"}
         </p>
+        </section>
+        <div id="adopt-button">
         <Button variant="contained" color="secondary">
           Adopt!
         </Button>
+        </div>
+        </section>
       </div>
+      
     );
   };
 
   return (
     <main>
-      <div className="content">
+      <div className="pet-details-content">
         {!isLoaded ? CircularUnderLoad() : details()}
       </div>
     </main>

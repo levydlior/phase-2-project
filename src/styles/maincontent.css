@@ -38,3 +38,27 @@ main {
 }
 
 
+#pet-details-img {
+  width: 500px;
+  height: 450px;
+  padding: 0.5rem;
+}
+
+.pet-details-content{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  width: 33rem;
+  padding: 0.5rem;
+  
+}
+
+#button-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+#adopt-button {
+  display: flex;
+  align-items: flex-end;
+}
