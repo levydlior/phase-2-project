@@ -62,3 +62,13 @@ main {
   display: flex;
   align-items: flex-end;
 }
+
+#adoption-form {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+#adoption-form > label {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
