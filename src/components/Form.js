@@ -1,7 +1,10 @@
 import { useState } from 'react'
+import { useHistory } from "react-router-dom";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 function Form ({ onPetSubmit }) {
-
+  const history = useHistory();
+  const [ submitted, setSubmitted ] = useState(false);
   const [ newPetForm, setNewPetForm ] = useState({
     name: '',
     breed: '',
@@ -31,7 +34,15 @@ function Form ({ onPetSubmit }) {
           image: ''
         })
       })
+    setSubmitted(true);
+    setTimeout(() => {
+      history.push("/");
+    }, 2000);
   };
+
+  function CircularUnderLoad () {
+    return <CircularProgress disableShrink />;
+  }
 
   function handleChange (e) {
     const target = e.target.name
@@ -41,9 +52,8 @@ function Form ({ onPetSubmit }) {
 
   }
 
-  return (
-    <main>
-      <p>Submit Pet For Adoption</p>
+  function formDetails () {
+    return (
       <div className='content'>
         <form id="addForm" onSubmit={ handleSubmit }>
           <div className="form">
@@ -68,7 +78,11 @@ function Form ({ onPetSubmit }) {
           </div>
         </form>
       </div>
-    </main>
+    )
+  }
+
+  return (
+    <main>{ !submitted ? (formDetails()) : (<h2> Your Pet Will Be Better Off! { CircularUnderLoad() } </h2>) }</main>
   )
 }
 
