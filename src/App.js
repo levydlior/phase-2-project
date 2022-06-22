@@ -6,11 +6,15 @@ import { Route, Switch } from "react-router-dom";
 import PetDetails from "./components/PetDetails";
 import Form from "./components/Form";
 import AdoptionForm from "./components/AdoptionForm";
+import FavoritePets from "./components/FavoritePets";
 
 function App() {
   const [puppies, setPuppies] = useState([{},{},{},{},{},{},{},{},{},{}]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [canAdopt, setCanAdopt] = useState(false);
+  
+
+
 
   useEffect(() => {
     fetch("http://localhost:3001/pets")
@@ -30,6 +34,21 @@ function App() {
     setCanAdopt(true);
   }
 
+  function handleLikedPet(petObject){
+    const updatedPets = puppies.map(pup => {
+      if(pup.id === petObject.id){
+        return petObject
+      }else {
+        return pup
+      }
+    })
+    setPuppies(updatedPets)
+  }
+
+  const likedPets = puppies.filter(pup => pup.like === true)
+
+  
+
   return (
     <div>
       <Header />
@@ -37,8 +56,11 @@ function App() {
         <Route path="/surrender-pet">
           <Form onPetSubmit={handleSubmit} />
         </Route>
+        <Route path='/favorite-pets'>
+          <PetsList puppies={likedPets} isLoaded={isLoaded}/> 
+        </Route>
         <Route exact path="/pets-list/:id">
-          <PetDetails canAdopt={canAdopt} />
+          <PetDetails canAdopt={canAdopt} onLikePet={handleLikedPet} />
         </Route>
         <Route path="/add-pet">
           <h1>Form to add / edit</h1>

@@ -13,7 +13,10 @@ function NavBar () {
         Surrender Your Pet
         </NavLink>
         <NavLink exact to="/adoption-form">
-          Apply for Adoption
+          Apply For Adoption
+        </NavLink>
+        <NavLink exact to="/favorite-pets">
+          My Favorite Pets
         </NavLink>
       </nav>
 
