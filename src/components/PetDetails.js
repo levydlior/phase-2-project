@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { Button } from "@material-ui/core";
 
-function PetDetails({ canAdopt, onLikePet }) {
+function PetDetails({ canAdopt, onLikePet, onDeletePet }) {
   const { id } = useParams();
   const [pet, setPet] = useState({});
   const [isLoaded, setIsLoaded] = useState(false);
@@ -21,6 +21,11 @@ function PetDetails({ canAdopt, onLikePet }) {
       });
   }, [id]);
 
+  function handleDelete(){
+    fetch(`http://localhost:3001/pets/${id}`, {
+      method: 'DELETE'
+    }).then(() => onDeletePet(id))
+  }
   
 
   function handleClick() {
@@ -67,6 +72,7 @@ function PetDetails({ canAdopt, onLikePet }) {
               variant="contained"
               color="secondary"
               disabled={!canAdopt ? true : false}
+              onClick={handleDelete}
             >
               Adopt!
             </Button>
