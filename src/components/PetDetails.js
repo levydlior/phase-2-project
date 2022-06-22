@@ -7,7 +7,6 @@ function PetDetails({ canAdopt, onLikePet }) {
   const { id } = useParams();
   const [pet, setPet] = useState({});
   const [isLoaded, setIsLoaded] = useState(false);
-  
 
   function CircularUnderLoad() {
     return <CircularProgress disableShrink />;
@@ -37,7 +36,6 @@ function PetDetails({ canAdopt, onLikePet }) {
       });
   }
 
-
   const details = () => {
     return (
       <div id="pet-details">
@@ -52,10 +50,16 @@ function PetDetails({ canAdopt, onLikePet }) {
               <b>Sex: </b> {pet.breed === "male" ? "male ♂" : "female ♀"}
             </p>
           </section>
+         
           <div id="adopt-button">
-          <p className={pet.like ? "liked" : "unliked"} onClick={handleClick}>
-          ♥
-        </p>
+          <div id="heart-area">
+              <p
+                className={pet.like ? "liked" : "unliked"}
+                onClick={handleClick}
+              >
+                ♥
+              </p>
+            </div>
             <Button
               variant="contained"
               color="secondary"
