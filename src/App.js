@@ -8,7 +8,7 @@ import Form from "./components/Form";
 import AdoptionForm from "./components/AdoptionForm";
 
 function App() {
-  const [puppies, setPuppies] = useState([]);
+  const [puppies, setPuppies] = useState([{},{},{},{},{},{},{},{},{},{}]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [canAdopt, setCanAdopt] = useState(false);
 
