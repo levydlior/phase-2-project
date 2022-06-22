@@ -59,24 +59,31 @@ main {
   flex: 0 1 auto;
 }
 
+
 #pet-details-content{
   align-items: left;
   justify-content: left;
 }
-
 
 #button-text {
   display: flex;
   justify-content: space-between;
 }
 
-#adopt-button {
+#adopt-button{
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #ccc;
+  background-color: rgb(132, 132, 132);
+}
+  
+#adopt-button-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
 #adoption-form {
@@ -93,24 +100,39 @@ main {
   padding: 0.5rem;
 }
 
-
 .unliked {
   position: absolute;
   font-size: 2rem;
   color: rgba(50, 50, 93, 0.279);
-  padding: 2rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .unliked:hover {
   cursor: grab;
+  transform: scale(1.1);
 }
 .liked {
   position: absolute;
   font-size: 2rem;
   color: rgb(255, 0, 0);
-  padding: 2rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .liked:hover {
   cursor: grab;
+  transform: scale(1.1);
 }
+
+.heart-area {
+  display: flex;
+}
+
+  
+  
+  /* .pet-details-content {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  width: 33rem;
+  padding: 0.5rem;
+} */
