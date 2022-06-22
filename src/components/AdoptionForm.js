@@ -66,7 +66,9 @@ function AdoptionForm({ onAdoptionFormSubmit }) {
             onChange={handleChange}
           />
 
-          <input type="submit" />
+          <button id='adopt-button'>
+            <input type="submit" />
+          </button>
         </form>
       </>
     );

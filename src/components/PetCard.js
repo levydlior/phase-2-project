@@ -12,7 +12,7 @@ function petCard({ puppy, isLoaded }) {
   function loadginCards() {
     if (isLoaded) {
       return (
-        <Link exact to={`/pets-list/${id}`}>
+        <Link exact to={`./pets-list/${id}`}>
           <div className="puppy-card">
             <h2>{name}</h2>
             <img src={image} alt={breed} />
