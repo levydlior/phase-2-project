@@ -72,7 +72,8 @@ main {
 .unliked {
   position: absolute;
   font-size: 2rem;
-  color: rgba(50, 50, 93, 0.279)
+  color: rgba(50, 50, 93, 0.279);
+  padding: 2rem;
 }
 
 .unliked:hover {
@@ -81,7 +82,8 @@ main {
 .liked {
   position: absolute;
   font-size: 2rem;
-  color: rgb(255, 0, 0)
+  color: rgb(255, 0, 0);
+  padding: 2rem;
 }
 
 .liked:hover {

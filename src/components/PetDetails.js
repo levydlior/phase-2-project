@@ -41,9 +41,6 @@ function PetDetails({ canAdopt, onLikePet }) {
   const details = () => {
     return (
       <div id="pet-details">
-        <p className={pet.like ? "liked" : "unliked"} onClick={handleClick}>
-          ♥
-        </p>
         <img id="pet-details-img" src={pet.image} alt={pet.breed} />
         <section id="button-text">
           <section>
@@ -56,6 +53,9 @@ function PetDetails({ canAdopt, onLikePet }) {
             </p>
           </section>
           <div id="adopt-button">
+          <p className={pet.like ? "liked" : "unliked"} onClick={handleClick}>
+          ♥
+        </p>
             <Button
               variant="contained"
               color="secondary"
