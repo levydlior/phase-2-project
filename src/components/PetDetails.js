@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { Button } from "@material-ui/core";
 
-function PetDetails ({ canAdopt, onLikePet, setPuppies, puppies }) {
-
+function PetDetails({ canAdopt, onLikePet }) {
   const { id } = useParams();
-  const [ pet, setPet ] = useState({});
-  const [ isLoaded, setIsLoaded ] = useState(false);
+  const [pet, setPet] = useState({});
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  function CircularUnderLoad () {
+  function CircularUnderLoad() {
     return <CircularProgress disableShrink />;
   }
 
@@ -21,18 +19,12 @@ function PetDetails ({ canAdopt, onLikePet, setPuppies, puppies }) {
         setPet(pet);
         setIsLoaded(true);
       });
-  }, [ id ]);
+  }, [id]);
 
-  function deletePuppy (petId) {
+  
+
+  function handleClick() {
     fetch(`http://localhost:3001/pets/${id}`, {
-      method: "DELETE",
-    })
-    setPuppies((currentPuppies) => currentPuppies.filter((pup) => pup.id !== petId))
-
-  }
-
-  function handleClick () {
-    fetch(`http://localhost:3000/pets/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
@@ -50,23 +42,23 @@ function PetDetails ({ canAdopt, onLikePet, setPuppies, puppies }) {
   const details = () => {
     return (
       <div id="pet-details">
-        <img id="pet-details-img" src={ pet.image } alt={ pet.breed } />
+        <img id="pet-details-img" src={pet.image} alt={pet.breed} />
         <section id="button-text">
           <section id='pet-details-content'>
-            <h3>Name: { pet.name }</h3>
+            <h3>Name: {pet.name}</h3>
             <p>
-              <b>Breed: </b> { pet.breed }
+              <b>Breed: </b> {pet.breed}
             </p>
             <p>
-              <b>Sex: </b> { pet.breed === "male" ? "male ♂" : "female ♀" }
+              <b>Sex: </b> {pet.breed === "male" ? "male ♂" : "female ♀"}
             </p>
           </section>
-
+         
           <div id="adopt-button-area">
-            <div id="heart-area">
+          <div id="heart-area">
               <p
-                className={ pet.like ? "liked" : "unliked" }
-                onClick={ handleClick }
+                className={pet.like ? "liked" : "unliked"}
+                onClick={handleClick}
               >
                 ♥
               </p>
@@ -74,8 +66,7 @@ function PetDetails ({ canAdopt, onLikePet, setPuppies, puppies }) {
             <Button id="adopt-button"
               variant="contained"
               color="secondary"
-              disabled={ !canAdopt ? true : false }
-              onClick={ deletePuppy }
+              disabled={!canAdopt ? true : false}
             >
               Adopt!
             </Button>
@@ -88,7 +79,7 @@ function PetDetails ({ canAdopt, onLikePet, setPuppies, puppies }) {
   return (
     <main>
       <div className="pet-details-content">
-        { !isLoaded ? CircularUnderLoad() : details() }
+        {!isLoaded ? CircularUnderLoad() : details()}
       </div>
     </main>
   );
