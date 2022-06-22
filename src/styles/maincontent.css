@@ -88,11 +88,16 @@ main {
 
 #adopt-button{
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 14px 14px 14px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: rgb(132, 132, 132);
+  background-color: rgb(190, 24, 24);
+  color:white;
+}
+
+#adopt-button:disabled {
+  background-color: rgb(175, 173, 173)
 }
   
 #adopt-button-area {
@@ -141,7 +146,10 @@ main {
   display: flex;
 }
 
-  
+#surrender-img {
+  margin: 30px 30px 30px 30px;
+}
+
   
   /* .pet-details-content {
   display: flex;

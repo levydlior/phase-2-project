@@ -10,13 +10,13 @@ function Header() {
       <div id="logo">
         <img 
           src={logo}
-          alt="puppy"
+          alt="logo"
           id="logoImg"
         />
       </div>
       <NavBar />
     </header>
   );
-}
+};
 
 export default Header;
