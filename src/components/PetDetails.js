@@ -21,6 +21,8 @@ function PetDetails({ canAdopt, onLikePet }) {
       });
   }, [id]);
 
+  
+
   function handleClick() {
     fetch(`http://localhost:3001/pets/${id}`, {
       method: "PATCH",
@@ -52,7 +54,7 @@ function PetDetails({ canAdopt, onLikePet }) {
             </p>
           </section>
          
-          <div id="adopt-button">
+          <div id="adopt-button-area">
           <div id="heart-area">
               <p
                 className={pet.like ? "liked" : "unliked"}
@@ -61,7 +63,7 @@ function PetDetails({ canAdopt, onLikePet }) {
                 ♥
               </p>
             </div>
-            <Button
+            <Button id="adopt-button"
               variant="contained"
               color="secondary"
               disabled={!canAdopt ? true : false}

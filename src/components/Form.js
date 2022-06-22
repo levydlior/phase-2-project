@@ -77,6 +77,8 @@ function Form ({ onPetSubmit }) {
             <input type="submit" />
           </div>
         </form>
+
+        <img src='http://tonygentilcore.com/wp-content/uploads/2018/11/sad-puppy.jpg' alt='Sad puppy' />
       </div>
     )
   }

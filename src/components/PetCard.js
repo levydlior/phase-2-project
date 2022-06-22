@@ -20,7 +20,7 @@ function petCard({ puppy, isLoaded }) {
         </Link>
       );
     } else {
-      return <div className="puppy-card">{CircularUnderLoad()}</div>;
+      return <div className="puppy-card-loading">{CircularUnderLoad()}</div>;
     }
   }
 
