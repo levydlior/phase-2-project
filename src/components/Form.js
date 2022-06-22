@@ -6,6 +6,7 @@ function Form ({ onPetSubmit }) {
   const history = useHistory();
   const [ submitted, setSubmitted ] = useState(false);
   const [ newPetForm, setNewPetForm ] = useState({
+    id: '',
     name: '',
     breed: '',
     sex: '',

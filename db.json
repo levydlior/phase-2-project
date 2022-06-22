@@ -154,15 +154,6 @@
       "like": false
     },
     {
-      "id": 18,
-      "name": "Tiger",
-      "breed": "Shorthair",
-      "sex": "male",
-      "type": "cat",
-      "image": "https://kittyinsight.com/wp-content/uploads/2022/03/orangetabbyamericanshorthaircat.jpg",
-      "like": false
-    },
-    {
       "id": 19,
       "name": "Leo",
       "breed": "Wirehair",
@@ -179,68 +170,6 @@
       "type": "cat",
       "image": "https://cattime.com/assets/uploads/gallery/american-wirehair-cats-and-kittens/american-wirehair-cats-kittens-1.jpg",
       "like": false
-    },
-    {
-      "name": "Poop",
-      "breed": "bloop",
-      "sex": "female",
-      "type": "dog",
-      "image": "data:image/jpeg;base64,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",
-      "id": 21,
-      "like": false
-    },
-    {
-      "name": "dogo",
-      "breed": "something",
-      "sex": "female",
-      "type": "dog",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOtcOr8GroUntlaMu7QG3Ayd4_xxB5yRQMOw&usqp=CAU",
-      "id": 22
-    },
-    {
-      "name": "da",
-      "breed": "da",
-      "sex": "female",
-      "type": "dog",
-      "image": "da",
-      "like": false,
-      "id": 23
-    },
-    {
-      "name": "Jerry",
-      "breed": "German Shepherd",
-      "sex": "male",
-      "type": "dog",
-      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH4AfgMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAYCAwUBB//EAEIQAAIBAwIDAwkGAgcJAAAAAAECAwAEEQUhBhIxE0FRBxQVImFxgZGxMlRywdHwkqEjMzRCUoPhFiQ1Q3OCk7LC/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAMEBQIBBgf/xAA3EQACAQICBgkDBAEFAQAAAAAAAQIDEQQhBRIxQYHBEyIyUWFxobHRFOHwM0JSkUMVIzTC8Qb/2gAMAwEAAhEDEQA/APuNAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUB5kUAyKA9oBQCgFAKAUAoBQCgFAM0B4CDQHtAKApvH+pXuntZ+ZXUkHOH5uXv3WszSFapTlFQdtvI1dG0KdWMtdXtbmVmw4n1tSWOouw5sESIrAeB6VTWMrxV9a/mXngcPJ2cbHetONruMhb21hk8WjJT443qWGlJfviQz0RF505HSTjGJ/sWbk/9RasrSVN7mVXouot5n/tWe7TJj7pU/Wu/ro7l7HH+ny/l7mDcXOD/AMIuT7pE/WvPr1/F+nyPoH/Jepj/ALYt3aNdn/MT9afXx/i/T5H+nv8AkvUxfjORRn0Jef8Akj/WuljYvc/QfQP+a9fglniWYyMI9IupEAyHVlw3u3o8ZbZBv+it0NtrNZ4rcNyei5u0xnl7VP1rn69Xzi/T5DoO10zZc8STwcp9D3LoWCl1kTAPzr361Wu4v0PVQvvMbTiOW9vDb",
-      "like": false,
-      "id": 24
-    },
-    {
-      "name": "Jerry",
-      "breed": "German Shepherd",
-      "sex": "male",
-      "type": "dog",
-      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH4AfgMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAYCAwUBB//EAEIQAAIBAwIDAwkGAgcJAAAAAAECAwAEEQUhBhIxE0FRBxQVImFxgZGxMlRywdHwkqEjMzRCUoPhFiQ1Q3OCk7LC/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAMEBQIBBgf/xAA3EQACAQICBgkDBAEFAQAAAAAAAQIDEQQhBRIxQYHBEyIyUWFxobHRFOHwM0JSkUMVIzTC8Qb/2gAMAwEAAhEDEQA/APuNAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUB5kUAyKA9oBQCgFAKAUAoBQCgFAM0B4CDQHtAKApvH+pXuntZ+ZXUkHOH5uXv3WszSFapTlFQdtvI1dG0KdWMtdXtbmVmw4n1tSWOouw5sESIrAeB6VTWMrxV9a/mXngcPJ2cbHetONruMhb21hk8WjJT443qWGlJfviQz0RF505HSTjGJ/sWbk/9RasrSVN7mVXouot5n/tWe7TJj7pU/Wu/ro7l7HH+ny/l7mDcXOD/AMIuT7pE/WvPr1/F+nyPoH/Jepj/ALYt3aNdn/MT9afXx/i/T5H+nv8AkvUxfjORRn0Jef8Akj/WuljYvc/QfQP+a9fglniWYyMI9IupEAyHVlw3u3o8ZbZBv+it0NtrNZ4rcNyei5u0xnl7VP1rn69Xzi/T5DoO10zZc8STwcp9D3LoWCl1kTAPzr361Wu4v0PVQvvMbTiOW9vDb",
-      "like": false,
-      "id": 25
-    },
-    {
-      "name": "ds",
-      "breed": "ds",
-      "sex": "male",
-      "type": "dog",
-      "image": "ds",
-      "like": false,
-      "id": 26
-    },
-    {
-      "name": ";lkj",
-      "breed": ";lkj;l",
-      "sex": "male",
-      "type": "dog",
-      "image": ";lkj",
-      "like": false,
-      "id": 27
     }
   ]
 }

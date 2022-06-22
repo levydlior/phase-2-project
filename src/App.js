@@ -55,6 +55,12 @@ function App() {
 
   const likedPets = puppies.filter((pup) => pup.like === true);
 
+  function handleDelete(id) {
+    const updatePets = puppies.filter((pet) => pet.id !== parseInt(id));
+    console.log(updatePets)
+    setPuppies(updatePets);
+  }
+
   return (
     <div>
       <Header />
@@ -66,7 +72,11 @@ function App() {
           <FavoritePets likedPets={likedPets} isLoaded={isLoaded} />
         </Route>
         <Route exact path="/pets-list/:id">
-          <PetDetails canAdopt={canAdopt} onLikePet={handleLikedPet} />
+          <PetDetails
+            canAdopt={canAdopt}
+            onLikePet={handleLikedPet}
+            onDeletePet={handleDelete}
+          />
         </Route>
         <Route path="/add-pet">
           <h1>Form to add / edit</h1>
