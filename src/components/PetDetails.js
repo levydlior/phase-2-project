@@ -42,8 +42,8 @@ function PetDetails({ canAdopt, onLikePet }) {
       <div id="pet-details">
         <img id="pet-details-img" src={pet.image} alt={pet.breed} />
         <section id="button-text">
-          <section>
-            <h2>Name: {pet.name}</h2>
+          <section id='pet-details-content'>
+            <h3>Name: {pet.name}</h3>
             <p>
               <b>Breed: </b> {pet.breed}
             </p>
