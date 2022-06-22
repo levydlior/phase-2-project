@@ -33,6 +33,7 @@ function PetDetails({ canAdopt, onLikePet }) {
       .then((r) => r.json())
       .then((updatedPet) => {
         setPet(updatedPet);
+        onLikePet(updatedPet)
       });
   }
 
