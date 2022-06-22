@@ -55,7 +55,7 @@ function Form ({ onPetSubmit }) {
   function formDetails () {
     return (
       <div className='content'>
-        <form id="addForm" onSubmit={ handleSubmit }>
+        <form id="adoption-form" onSubmit={ handleSubmit }>
           <div className="form">
             <label htmlFor="name">Name:</label><br />
             <input type="text" name="name" value={ name } onChange={ handleChange } /><br />
@@ -74,11 +74,11 @@ function Form ({ onPetSubmit }) {
             <input type="radio" name="type" value="dog" onChange={ handleChange } /> Dog
             <input type="radio" name="type" value="cat" onChange={ handleChange } />Cat<br />
 
-            <input type="submit" />
+            <button type="submit" id='adopt-button'>Submit</button>
           </div>
         </form>
 
-        <img src='http://tonygentilcore.com/wp-content/uploads/2018/11/sad-puppy.jpg' alt='Sad puppy' />
+        <img id="surrender-img"src='http://tonygentilcore.com/wp-content/uploads/2018/11/sad-puppy.jpg' alt='Sad puppy' />
       </div>
     )
   }
