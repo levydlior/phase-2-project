@@ -7,6 +7,7 @@ function PetDetails({ canAdopt, onLikePet, onDeletePet }) {
   const { id } = useParams();
   const [pet, setPet] = useState({});
   const [isLoaded, setIsLoaded] = useState(false);
+  const [gotAdopted, setGotAdopted] = useState(false)
 
   function CircularUnderLoad() {
     return <CircularProgress disableShrink />;
