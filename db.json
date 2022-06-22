@@ -25,7 +25,7 @@
       "sex": "female",
       "type": "dog",
       "image": "https://i.pinimg.com/originals/4e/32/ec/4e32ec7a9101fd906cf466a9cdeda9a6.jpg",
-      "like": true
+      "like": false
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "sex": "female",
       "type": "dog",
       "image": "https://www.pupvine.com/wp-content/uploads/2021/05/Siberian-Huskies-lying-on-the-grass-735x491.jpg",
-      "like": false
+      "like": true
     },
     {
       "id": 5,
