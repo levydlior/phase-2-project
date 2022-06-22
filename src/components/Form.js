@@ -7,7 +7,8 @@ function Form ({ onPetSubmit }) {
     breed: '',
     sex: '',
     type: '',
-    image: ''
+    image: '',
+    like: false
   })
   const { name, breed, sex, type, image } = newPetForm
   const handleSubmit = e => {

@@ -4,14 +4,13 @@ import "./styles/maincontent.css";
 import PetsList from "./components/PetsList";
 import { Route, Switch } from "react-router-dom";
 import PetDetails from "./components/PetDetails";
-import Form from './components/Form';
+import Form from "./components/Form";
 import AdoptionForm from "./components/AdoptionForm";
 
 function App() {
   const [puppies, setPuppies] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [canAdopt, setCanAdopt] = useState(false);
-
 
   useEffect(() => {
     fetch("http://localhost:3001/pets")
@@ -22,14 +21,13 @@ function App() {
       });
   }, []);
 
-
-  function handleSubmit (newPet) {
-    const updatedPets = [ ...puppies, newPet ]
-    setPuppies(updatedPets)
+  function handleSubmit(newPet) {
+    const updatedPets = [...puppies, newPet];
+    setPuppies(updatedPets);
   }
 
-  function handleAdoptionFormSubmit(){
-    setCanAdopt(true)
+  function handleAdoptionFormSubmit() {
+    setCanAdopt(true);
   }
 
   return (
@@ -37,7 +35,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/surrender-pet">
-          <Form onPetSubmit={ handleSubmit } />
+          <Form onPetSubmit={handleSubmit} />
         </Route>
         <Route exact path="/pets-list/:id">
           <PetDetails canAdopt={canAdopt} />
@@ -49,7 +47,7 @@ function App() {
           <AdoptionForm onAdoptionFormSubmit={handleAdoptionFormSubmit} />
         </Route>
         <Route exact path="/">
-          <PetsList puppies={ puppies } isLoaded={ isLoaded } />
+          <PetsList puppies={puppies} isLoaded={isLoaded} />
         </Route>
         <Route path="*">
           <h1>404 Page Not Found!</h1>

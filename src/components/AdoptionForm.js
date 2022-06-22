@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
-
 function AdoptionForm({ onAdoptionFormSubmit }) {
   const [adoptionForm, setAdoptionForm] = useState({
     first: "",
@@ -34,7 +33,6 @@ function AdoptionForm({ onAdoptionFormSubmit }) {
   function CircularUnderLoad() {
     return <CircularProgress disableShrink />;
   }
-
 
   function formDetails() {
     return (
@@ -77,7 +75,11 @@ function AdoptionForm({ onAdoptionFormSubmit }) {
   return (
     <main>
       <div className="content">
-        {!submited ? formDetails() : <h2>Form accepted - redirecting! {CircularUnderLoad()} </h2>}
+        {!submited ? (
+          formDetails()
+        ) : (
+          <h2>Form accepted - redirecting! {CircularUnderLoad()} </h2>
+        )}
       </div>
     </main>
   );

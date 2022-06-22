@@ -67,3 +67,23 @@ main {
   margin: 0.5rem;
   padding: 0.5rem;
 }
+
+
+.unliked {
+  position: absolute;
+  font-size: 2rem;
+  color: rgba(50, 50, 93, 0.279)
+}
+
+.unliked:hover {
+  cursor: grab;
+}
+.liked {
+  position: absolute;
+  font-size: 2rem;
+  color: rgb(255, 0, 0)
+}
+
+.liked:hover {
+  cursor: grab;
+}
