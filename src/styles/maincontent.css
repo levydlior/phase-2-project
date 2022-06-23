@@ -154,10 +154,7 @@ main {
 }
 
   
-  /* .pet-details-content {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid black;
-  width: 33rem;
-  padding: 0.5rem;
-} */
+#logo-link {
+ margin: 0;
+ padding: 0;
+}
