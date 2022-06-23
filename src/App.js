@@ -58,7 +58,7 @@ function App() {
   function handleDelete(id) {
     const updatePets = puppies.filter((pet) => pet.id !== parseInt(id));
     setPuppies(updatePets);
-    setCanAdopt(false)
+    setCanAdopt(false);
   }
 
   return (

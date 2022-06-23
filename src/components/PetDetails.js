@@ -81,7 +81,7 @@ function PetDetails ({ canAdopt, onLikePet, onDeletePet }) {
             </Button>
           </div>
         </section>
-        { canAdopt ? null : <h4> In order to adopt your new furry pet, please fill out our "Apply For Adoption" form! </h4> }
+        { canAdopt ? null : <h4> To adopt - please fill out our "Apply For Adoption" form! </h4> }
       </>
     )
   }

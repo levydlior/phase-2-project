@@ -20,7 +20,7 @@ function AdoptionForm({ onAdoptionFormSubmit }) {
     setSubmited(true);
     setTimeout(() => {
       history.push("/");
-    }, 2000);
+    }, 1500);
   }
 
   function handleChange(e) {
@@ -65,9 +65,10 @@ function AdoptionForm({ onAdoptionFormSubmit }) {
             value={address}
             onChange={handleChange}
           />
-          
-          <button type="submit" id='adopt-button'>Submit</button>
-          
+
+          <button type="submit" id="adopt-button">
+            Submit
+          </button>
         </form>
       </>
     );
