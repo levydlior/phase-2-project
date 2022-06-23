@@ -25,7 +25,10 @@ function PetDetails ({ canAdopt, onLikePet, onDeletePet }) {
   function handleDelete () {
     fetch(`http://localhost:3001/pets/${id}`, {
       method: 'DELETE'
-    }).then(() => onDeletePet(id))
+    }).then(() => {
+      onDeletePet(id)
+      setGotAdopted(true)
+    })
   }
 
 
@@ -45,10 +48,9 @@ function PetDetails ({ canAdopt, onLikePet, onDeletePet }) {
       });
   }
 
-  const details = () => {
+  const AdoptedDetails = () => {
     return (
-      <div id="pet-details">
-        <img id="pet-details-img" src={ pet.image } alt={ pet.breed } />
+      <>
         <section id="button-text">
           <section id='pet-details-content'>
             <h3>Name: { pet.name }</h3>
@@ -79,6 +81,16 @@ function PetDetails ({ canAdopt, onLikePet, onDeletePet }) {
             </Button>
           </div>
         </section>
+        { canAdopt ? null : <h4> In order to adopt your new furry pet, please fill out our "Apply For Adoption" form! </h4> }
+      </>
+    )
+  }
+
+  const details = () => {
+    return (
+      <div id="pet-details">
+        <img id="pet-details-img" src={ pet.image } alt={ pet.breed } />
+        { !gotAdopted ? <AdoptedDetails /> : <h2>Enjoy your new furry buddy, { pet.name }!</h2> }
       </div>
     );
   };
@@ -88,7 +100,6 @@ function PetDetails ({ canAdopt, onLikePet, onDeletePet }) {
       <div className="pet-details-content">
         { !isLoaded ? CircularUnderLoad() : details() }
       </div>
-      { canAdopt ? null : <h4> In order to adopt your new furry pet, please fill out our "Apply For Adoption" form! </h4> }
     </main>
   );
 }
