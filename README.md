@@ -36,7 +36,7 @@ To run this project: <ol>
 # Features
 <ul>
   <li>View "available" pets for adoption (GET request)</li>
-  <li>Favorite/unfavorite spesific pets and then view them on the "my favorite pets" route (PATCH)</li>
+  <li>Favorite/unfavorite specific pets and then view them on the "my favorite pets" route (PATCH)</li>
   <li>"Surrender" pets (add to the list - POST)</li>
   <li>User needs to fill-out an adoption form before the ability to "adopt" is given</li>
   <li>"Adopt" a pet (DELETE) </li>
