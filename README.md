@@ -12,7 +12,7 @@ The perfect place to find your pet!
 </ul>
 
 # General Info
-If there is one thing we all learned from covid is that having a pet is the best way to go. This website will help you find the prfect pet for you. 
+If there is one thing we have all learned from covid, it's that having a pet is the best way to go. This website will help you find the perfect pet for you. 
 
 
 # Technologies
@@ -42,12 +42,12 @@ To run this project: <ol>
   <li>"Adopt" a pet (DELETE) </li>
 </ul>
 
-# Improvments for future
+# Improvements for future
 The general work was amazing and great. A few things we could've done better:
     <ul>
-    <li>Naming of variables - a few times we got confused since out variable names were not accurate.</li>
-    <li>Refactoring - Even though we used the components we made in different locations (as component should be used), we did repeat some of our code a few times.</li>
-    <li>Cleaner Code - this connects to the first two. Having a cleaner code would've allowed us to work more efficently and encounter less problems.</li>
+    <li>Naming of variables - a few times we got confused since our variable names were not accurate.</li>
+    <li>Refactoring - Even though we used the components we made in different locations (as components should be used), we did repeat some of our code a few times.</li>
+    <li>Cleaner Code - this connects to the first two. Having a cleaner code would've allowed us to work more efficiently and encounter less problems.</li>
     </ul>
 
 # Contacts
