@@ -10,16 +10,16 @@ import FavoritePets from "./components/FavoritePets";
 
 function App() {
   const [puppies, setPuppies] = useState([
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
+    {type: ""},
+    {type: ""},
+    {type: ""},
+    {type: ""},
+    {type: ""},
+    {type: ""},
+    {type: ""},
+    {type: ""},
+    {type: ""},
+    {type: ""},
   ]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [canAdopt, setCanAdopt] = useState(false);
