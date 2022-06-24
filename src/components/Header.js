@@ -7,11 +7,11 @@ function Header() {
   const logo = require("./StrangerPetsLogo.png");
   return (
     <header>
-        <div id="logo">
-          <Link exact to='/' id="logo-link">
+      <div id="logo">
+        <Link exact to="/" id="logo-link">
           <img src={logo} alt="logo" id="logoImg" />
-          </Link>
-        </div>
+        </Link>
+      </div>
       <NavBar />
     </header>
   );
