@@ -7,6 +7,7 @@ function Filters({ filteredPet, onFilterChange }) {
 
   return (
     <div>
+        <label htmlFor="filter">Filter By Pet Type: </label>
       <select name="filter" value={filteredPet} onChange={handleChange}>
         <option value="">All</option>
         <option value="dog">Dogs</option>
